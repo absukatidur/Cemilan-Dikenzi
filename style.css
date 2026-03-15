@@ -258,7 +258,7 @@ nav a:hover::after {
     background: white;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     width: 320px;
     text-align: center;
 }
@@ -296,7 +296,7 @@ nav a:hover::after {
     padding: 40px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .admin-container h2 {
@@ -341,7 +341,7 @@ nav a:hover::after {
     background: white;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .edit-form label {
@@ -368,4 +368,65 @@ nav a:hover::after {
 
 .edit-form button:hover {
     background: #7a3e1d;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+    }
+
+    nav {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .home {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: left;
+    }
+
+    .home h2 {
+        font-size: 28px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .menu {
+        padding: 80px 25px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 40px 25px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .admin-container {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .edit-form {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+
+    .menu-card img {
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
 }
